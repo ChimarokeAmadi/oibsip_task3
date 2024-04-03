@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-do List Web App</title>
+</head>
+<body>
+    <div class="new_item flex">
+        <h2 id="item_heading">New Item</h2>
+        <input type="text" id="task_id" placeholder="title">
+        <input type="text" id="task_description" placeholder="description">
+        <button onclick="addTask()">Save</button>
+    </div>
+
+    <div class="saved_list">
+        <h2>To-do List</h2>
+        <hr>
+        <ul id="list_container">
+            <!-- <li>
+                <div>
+                    <p>Task 1</p>
+                    <p>description 1</p>
+                    <button id="delete">X</button>
+                </div>
+            </li>
+            <li class="checked">
+                <div>
+                    <p>Task 2</p>
+                    <p>description 2</p>
+                    <button id="delete">X</button>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>Task 3</p>
+                    <p>description 3</p>
+                    <button id="delete">X</button>  
+                </div>
+            </li> -->
+        </ul>
+    </div>
+    <script src="index.js" charset="UTF-8"></script>
+</body>
+</html>

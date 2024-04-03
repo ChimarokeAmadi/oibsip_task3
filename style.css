@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, blue, purple);
+}
+
+#item_heading {
+    margin: 0px auto;
+}
+
+.new_item {
+    margin: 50px;
+    width: 500px;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: rgb(231, 229, 229);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+button {
+    margin: 10px auto;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px 30px;
+    background-color: blueviolet;
+    color: aliceblue;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+.saved_list {
+    width: 1000px;
+}
+
+hr {
+    border: 1px solid black;
+    margin: 10px 0px;
+}
+
+#list_container li::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: -15px;
+    top: -1px;
+}
+
+#list_container li {
+    list-style: none;
+    position: relative;
+}
+
+#list_container li div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#delete:hover{
+    background-color: red;
+    color: aqua;
+}
+
+#delete {
+    width: 20px;
+    margin: auto;
+    padding: 5px;
+    background-color: black;
+    color: red;
+    font-size: 10px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#list_container li.checked::before {
+    background-image: url(images/checked.png);
+    border: none;
+}
